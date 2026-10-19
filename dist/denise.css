@@ -1,4 +1,5 @@
 /* Fundo da primeira seção na versão para computador. */
+.local-faq-section .local-faq-title { margin-top: 0; }
 .family-section { padding: 64px 20px; background: #fffcf5; color: #1f282e; font-family: Inter, sans-serif; }
 .family-inner { max-width: 780px; margin: auto; }
 .family-inner h2 { margin: 0 0 32px; text-align: center; font: 600 36px/1.15 Inter, sans-serif; letter-spacing: -.05em; }
