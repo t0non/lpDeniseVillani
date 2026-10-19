@@ -117,3 +117,24 @@
   .elementor-10 .elementor-element.elementor-element-b8e648f h2 { color: #fff !important; }
   .elementor-10 .elementor-element.elementor-element-fe8e7b5 h1 { color: #fff !important; }
 }
+@media (max-width: 767px) {
+  .elementor-10 .elementor-element.elementor-element-312e643:not(.elementor-motion-effects-element-type-background) {
+    padding-bottom: 88px;
+    min-height: calc(max(760px, 177.7vw) + 88px);
+    background-size: 100% auto;
+    background-position: center calc(100% - 88px);
+    position: relative;
+  }
+  .elementor-10 .elementor-element.elementor-element-5f253ee {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    background: #fffcf5;
+    height: 88px;
+  }
+  .elementor-10 .elementor-element.elementor-element-312e643 > .e-con-inner,
+  .elementor-10 .elementor-element.elementor-element-8f73299 { position: static; }
+}
