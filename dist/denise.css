@@ -96,12 +96,22 @@
     background-image: url('/assets/background_site_mob_Denise.png');
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: max(820px, 177.7vw);
+    background-size: 100% auto;
+    background-color: #214c80;
+    min-height: max(760px, 177.7vw);
     justify-content: flex-start;
-    padding-top: 40px;
+    padding: 24px 20px 0;
   }
-  .elementor-10 .elementor-element.elementor-element-312e643 > .e-con-inner { align-self: flex-start; }
+  .elementor-10 .elementor-element.elementor-element-312e643 > .e-con-inner { align-self: flex-start; padding: 0; margin: 0; gap: 0; width: 100%; }
+  .elementor-10 .elementor-element.elementor-element-8f73299 { margin: 0; padding: 0; gap: 16px; justify-content: flex-start; width: 100%; }
+  .elementor-10 .elementor-element.elementor-element-e5b8258 { gap: 8px; margin: 0; }
+  .elementor-10 .elementor-element.elementor-element-fe8e7b5 h1 { font-size: 16px !important; line-height: 1.3 !important; }
+  .elementor-10 .elementor-element.elementor-element-92bd5e9 p { font-size: 10px; margin: 0; }
+  .elementor-10 .elementor-element.elementor-element-b8e648f .elementor-heading-title { font-size: clamp(26px, 6.8vw, 32px); line-height: 1.14; letter-spacing: -.8px; margin: 0; }
+  .elementor-10 .elementor-element.elementor-element-5aaef37 { margin: 0; }
+  .elementor-10 .elementor-element.elementor-element-5f253ee { width: 100%; margin: 0; }
+  .elementor-10 .elementor-button { min-height: 48px; display: flex; justify-content: center; align-items: center; padding: 13px 18px; font-size: 16px; }
+  .elementor-10 .elementor-button-content-wrapper { align-items: center; gap: 8px; }
   .elementor-10 .elementor-element.elementor-element-757a0ae { display: none; }
   .elementor-10 .elementor-element.elementor-element-fe8e7b5 h1,
   .elementor-10 .elementor-element.elementor-element-b8e648f h2 { color: #fff !important; }
