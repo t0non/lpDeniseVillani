@@ -14,4 +14,14 @@ assert 'aggregateRating' not in physician
 assert all('drjoao' not in json.dumps(e) for e in data['@graph'])
 ET.parse('dist/sitemap.xml')
 assert 'https://lpdenisevillani.vercel.app/sitemap.xml' in Path('dist/robots.txt').read_text()
+assert Path('dist/llms.txt').read_text(encoding='utf-8').startswith('# Dra. Denise')
+assert Path('dist/index.md').exists()
+assert 'rel="describedby" href="/llms.txt"' in html
+ids=re.findall(r'(?<![\w-])id="([^"]+)"',html)
+assert len(ids)==len(set(ids)), 'IDs HTML duplicados'
+for anchor in re.findall(r'href="#([^"]+)"',html):
+    assert anchor in ids, f'Âncora inexistente: {anchor}'
+assert len(physician['hasOfferCatalog']['itemListElement'])==6
+config=json.loads(Path('vercel.json').read_text())
+assert any(r['source']=='/llm.txt' and r['destination']=='/llms.txt' for r in config['redirects'])
 print('OK: H1 único, canonical, indexação, dados estruturados e sitemap.')

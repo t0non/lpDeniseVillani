@@ -1,4 +1,6 @@
 /* Fundo da primeira seção na versão para computador. */
+.local-section-nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px 24px; padding: 24px 20px; background: #1f282e; font: 400 14px/1.5 Inter, sans-serif; }
+.local-section-nav a { color: #fffcf5; text-decoration: underline; text-underline-offset: 3px; }
 .local-faq-section .local-faq-title { margin-top: 0; }
 .family-section { padding: 64px 20px; background: #fffcf5; color: #1f282e; font-family: Inter, sans-serif; }
 .family-inner { max-width: 780px; margin: auto; }

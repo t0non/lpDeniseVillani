@@ -1,0 +1,15 @@
+# Dra. Denise Villani de Carvalho
+
+> Cardiologista e médica de clínica médica com consultório no Cidade Jardim, em Belo Horizonte, Minas Gerais. Atendimento particular presencial e por teleconsulta.
+
+CRM-MG 18203; RQE 47487 e 47671. Endereço: Rua Eduardo Porto, 452, Casa, Cidade Jardim, Belo Horizonte, MG, CEP 30380-060. O telefone exibido no site, (31) 2441-0631, é intermediado pela Doctoralia; não é apresentado como WhatsApp direto. Agendamentos, preços e horários devem ser consultados no perfil da médica na plataforma. Informações revisadas em 19/10/2026.
+
+## Informações do atendimento
+- [Resumo em Markdown](https://lpdenisevillani.vercel.app/index.md): identidade, serviços, endereço, modalidades e agendamento.
+- [Página do consultório](https://lpdenisevillani.vercel.app/): apresentação da médica e informações completas.
+- [Consultas e serviços](https://lpdenisevillani.vercel.app/#servicos): cardiologia, hipertensão, clínica médica, teleconsulta, investigação clínica e cardiológica e medicina integrativa.
+- [Endereço e mapa](https://lpdenisevillani.vercel.app/#consultorio): localização no Cidade Jardim e como chegar.
+- [Perguntas frequentes](https://lpdenisevillani.vercel.app/#perguntas-frequentes): modalidades, atendimento particular e preparação para a consulta.
+
+## Referência profissional e agendamento
+- [Perfil da Dra. Denise na Doctoralia](https://www.doctoralia.com.br/denise-villani-de-carvalho/cardiologista-medico-clinico-geral/belo-horizonte): fonte pública dos dados profissionais e canal de agendamento.
