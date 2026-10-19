@@ -30,3 +30,7 @@ Telefone exibido: (31) 2441-0631, contato intermediado pela Doctoralia. Não há
 [Página principal e mapa do consultório](https://lpdenisevillani.vercel.app/).
 
 Informações revisadas em 19/10/2026. Valores, disponibilidade e condições podem mudar; confirme na plataforma de agendamento.
+
+## Perfis oficiais
+- [Perfil do consultório no Google](https://share.google/jCsu2WLRd8hnIsztO)
+- [Instagram @de_villani](https://www.instagram.com/de_villani/)
