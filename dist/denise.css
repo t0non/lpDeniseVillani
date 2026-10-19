@@ -1,4 +1,9 @@
 /* Fundo da primeira seção na versão para computador. */
+.office-photo-heading { padding: 20px 20px 28px; background: #fffcf5; text-align: center; }
+.office-photo-heading h2 { max-width: 900px; margin: 0 auto 16px; color: #1f282e; font: 600 36px/1.15 Inter, sans-serif; letter-spacing: -.05em; }
+.office-photo-heading h2 span { background: #1f282e; color: #fffcf5; padding: 0 3px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.office-photo-heading p { margin: 0 auto; max-width: 800px; color: #54595f; font: 400 16px/1.6 Inter, sans-serif; }
+@media (max-width: 767px) { .office-photo-heading h2 { font-size: 28px; } .office-photo-heading p { font-size: 14px; } }
 @keyframes cta-radar {
   0%, 55%, 100% { box-shadow: 0 0 0 0 rgba(18,75,112,0); }
   8% { box-shadow: 0 0 0 0 rgba(18,75,112,.38); }
