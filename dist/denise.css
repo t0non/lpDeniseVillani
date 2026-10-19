@@ -1,4 +1,16 @@
 /* Fundo da primeira seção na versão para computador. */
+.consultation-story { width: 100%; padding: 64px 20px; background: #eee8dc; color: #1f282e; font-family: Inter, sans-serif; }
+.consultation-story-inner { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 44px; max-width: 1100px; margin: auto; }
+.consultation-photo { margin: 0; }
+.consultation-photo > img { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 28px #342a1714; }
+.consultation-photo figcaption { margin-top: 12px; font-size: 12px; line-height: 1.6; color: #58616a; }
+.consultation-copy .consultation-eyebrow { margin: 0 0 14px; color: #124b70; font-size: 12px; font-weight: 700; letter-spacing: 1.2px; }
+.consultation-copy h2 { margin: 0 0 22px; font: 600 clamp(28px, 3vw, 36px)/1.15 Inter, sans-serif; letter-spacing: -.05em; color: #1f282e; }
+.consultation-copy h2 span { background: #124b70; color: #fff; padding: 0 3px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.consultation-copy > p { font-size: 16px; line-height: 1.7; margin: 0 0 18px; }
+.consultation-copy .consultation-cta { display: inline-flex; justify-content: center; align-items: center; gap: 8px; min-height: 48px; padding: 13px 20px; border-radius: 8px; background: #124b70; color: #fff; font-size: 16px; font-weight: 600; text-decoration: none; }
+.consultation-copy .consultation-location { display: block; margin-top: 16px; color: #124b70; font-size: 14px; text-decoration: underline; }
+@media (max-width: 767px) { .consultation-story { padding: 42px 20px; } .consultation-story-inner { grid-template-columns: 1fr; gap: 26px; } .consultation-copy .consultation-cta { display: flex; width: 100%; } }
 .local-specialty { font: 500 20px/1.4 Inter, sans-serif; color: #124b70; margin: 16px 0 0; }
 .local-consultorio { width: 100%; background: #f2eee3; padding: 64px 20px; color: #1f282e; font-family: Inter, sans-serif; }
 .local-container { max-width: 1000px; margin: auto; }
