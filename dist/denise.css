@@ -105,7 +105,7 @@
 .patient-review { flex: 0 0 520px; min-width: 0; padding: 28px 22px 25px; background: #fff; border: 1px solid #dedad3; border-radius: 8px; display: flex; flex-direction: column; scroll-snap-align: start; }
 .patient-review .review-meta { margin-top: auto; padding-top: 4px; }
 @media (max-width: 767px) {
-  .patient-reviews { gap: 16px; }
+  .patient-reviews { gap: 16px; overflow-y: hidden; touch-action: pan-x; overscroll-behavior-x: contain; }
   .patient-review { flex-basis: 88%; }
 }
 .review-header { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
