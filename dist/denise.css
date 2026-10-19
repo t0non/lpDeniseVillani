@@ -1,4 +1,6 @@
 /* Fundo da primeira seção na versão para computador. */
+.office-full-photo { width: 100%; margin: 0; padding: 0; line-height: 0; }
+.office-full-photo img { display: block; width: 100%; height: auto; margin: 0; border: 0; border-radius: 0; }
 .space-photo-strip { display: flex; width: 100%; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; }
 .space-photo-strip::-webkit-scrollbar { display: none; }
 .space-strip-photo { flex: 0 0 25%; min-width: 0; }
