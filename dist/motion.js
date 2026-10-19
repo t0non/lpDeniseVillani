@@ -2,7 +2,7 @@
   const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (preference.matches || !('IntersectionObserver' in window)) return;
 
-  const sections = document.querySelectorAll('.elementor-10 > .e-con.e-parent, .mobile-hero');
+  const sections = document.querySelectorAll('.elementor-10 > .e-con.e-parent, .mobile-hero, .local-consultorio');
   const cards = document.querySelectorAll('.service-card, .patient-review, .e-con[data-settings*="background_background"]:has(> .elementor-widget-icon)');
   cards.forEach((card, index) => {
     card.classList.add('motion-card');

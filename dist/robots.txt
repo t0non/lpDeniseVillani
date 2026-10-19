@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lpdenisevillani.vercel.app/sitemap.xml
