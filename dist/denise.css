@@ -1,0 +1,95 @@
+/* Fundo da primeira seção na versão para computador. */
+@media (min-width: 1025px) {
+  .elementor-10 .elementor-element.elementor-element-312e643:not(.elementor-motion-effects-element-type-background),
+  .elementor-10 .elementor-element.elementor-element-312e643 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-image: url('/assets/background_site_Denise.png');
+  }
+}
+.denise-topic { min-height: 175px; padding: 22px; border: 1px solid #d2cec5; border-radius: 12px; text-align: left; background: #fffcf5; }
+.denise-topic h4 { color: #124b70; font-size: 20px; margin: 0 0 12px; }
+.denise-topic p { font-size: 16px; line-height: 1.6; margin: 0; color: #1f282e; }
+.patient-reviews { display: flex; flex-wrap: nowrap; gap: 22px; width: 100%; max-width: 1120px; min-width: 0; margin: 0 auto 25px; padding-bottom: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-color: #124b70 #dedad3; scrollbar-width: thin; color: #111; font-family: Roboto, Arial, sans-serif; text-align: left; }
+.patient-review { flex: 0 0 520px; min-width: 0; padding: 28px 22px 25px; background: #fff; border: 1px solid #dedad3; border-radius: 8px; display: flex; flex-direction: column; scroll-snap-align: start; }
+.patient-review .review-meta { margin-top: auto; padding-top: 4px; }
+@media (max-width: 767px) {
+  .patient-reviews { gap: 16px; }
+  .patient-review { flex-basis: 88%; }
+}
+.review-header { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.review-avatar { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; border-radius: 50%; background: #add4d1; color: #fff; font-size: 12px; flex: 0 0 16px; }
+.review-name { font-size: 16px; font-weight: 700; }
+.review-verified { display: inline-flex; align-items: center; gap: 8px; padding: 3px 9px; margin-left: 8px; border-radius: 20px; background: #daf0cc; color: #008000; font-size: 14px; line-height: 16px; white-space: nowrap; }
+.review-verified > span { display: inline-flex; align-items: center; justify-content: center; position: relative; width: 19px; height: 19px; flex: 0 0 19px; border-radius: 50%; background: #008c79; color: transparent; font-size: 0; line-height: 1; }
+.review-check { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 14px; font-weight: 700; line-height: 1; }
+.review-stars { margin-left: auto; color: #00a58b; font-size: 19px; letter-spacing: -2px; line-height: 1; white-space: nowrap; }
+.patient-review .review-text { margin: 17px 0 16px; font-size: 18px; font-weight: 400; line-height: 1.45; }
+.review-meta { font-size: 12px; line-height: 1.65; color: #242424; }
+.review-meta a { color: inherit; text-decoration: underline; }
+.service-description { max-width: 360px; margin: 15px 0 0; color: #4a555d; font-size: 16px; line-height: 1.6; text-align: left; }
+.elementor-element-3318e0c .service-description { color: #f2f0e9; }
+/* Mostra todos os serviços, sem esconder cartões em slides. */
+.services-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: 20px; width: 100%; }
+.service-card { min-width: 0; padding: 28px; border-radius: 9px; display: flex; flex-direction: column; gap: 22px; }
+.service-card-dark { background: #1f282e; color: #fffcf5; }
+.service-card-light { background: #f2eee3; color: #1f282e; }
+.service-card-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; }
+.service-card-header span { padding: 5px 12px; border-radius: 5px; background: #124b70; color: white; font-size: 14px; font-weight: 600; line-height: 1.2; }
+.service-card-header img { width: 44px; height: 44px; object-fit: contain; flex-shrink: 0; }
+.service-card-body { border-left: 3px solid #124b70; padding-left: 13px; flex: 1; }
+.service-card .service-card-body h3 { margin: 0 0 16px; min-height: 3.6em; color: inherit; font-size: 24px; line-height: 1.2; font-weight: 600; letter-spacing: -.5px; }
+.service-card-body p { margin: 0; color: inherit; font-size: 16px; line-height: 1.65; }
+@media (max-width: 1024px) { .services-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 767px) { .services-cards { grid-template-columns: minmax(0, 1fr); grid-auto-rows: auto; gap: 16px; } .service-card { padding: 24px; } .service-card .service-card-body h3 { min-height: 0; } }
+.elementor-10 .elementor-element-3fc250e .e-n-carousel { overflow: visible; }
+.elementor-10 .elementor-element-3fc250e .swiper-wrapper { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; transform: none !important; height: auto !important; }
+.elementor-10 .elementor-element-3fc250e .swiper-slide { width: auto !important; min-width: 0; margin: 0 !important; height: auto; }
+.elementor-10 .elementor-element-3fc250e .swiper-slide > .e-con { height: 100%; }
+.elementor-10 .elementor-element-3fc250e .elementor-swiper-button,
+.elementor-10 .elementor-element-3fc250e .swiper-pagination { display: none !important; }
+.elementor-10 .elementor-element-3fc250e .service-description { max-width: none; }
+.elementor-10 .elementor-element-3fc250e .swiper-slide h3 { font-size: 24px; line-height: 1.25; }
+@media (max-width: 1024px) {
+  .elementor-10 .elementor-element-3fc250e .swiper-wrapper { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  .elementor-10 .elementor-element-3fc250e .swiper-wrapper { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+}
+.elementor-10 .elementor-element.elementor-element-14d4ded { background-color: #f4faf4 !important; }
+.elementor-10 .elementor-element.elementor-element-14d4ded .elementor-icon,
+.elementor-10 .elementor-element.elementor-element-14d4ded .elementor-icon-list-icon,
+.elementor-10 .elementor-element.elementor-element-f7fe35a { color: #19734b; }
+.elementor-10 .elementor-element.elementor-element-14d4ded svg { fill: #19734b !important; }
+.elementor-10 .elementor-element.elementor-element-bf76af7 .elementor-icon svg,
+.elementor-10 .elementor-element.elementor-element-0a08686 .elementor-icon svg { display: none; }
+.elementor-10 .elementor-element.elementor-element-bf76af7 .elementor-icon::before,
+.elementor-10 .elementor-element.elementor-element-0a08686 .elementor-icon::before { display: block; width: 40px; font: 700 44px/1 Arial, sans-serif; text-align: center; }
+.elementor-10 .elementor-element.elementor-element-bf76af7 .elementor-icon::before { content: '×'; color: #8b191d; }
+.elementor-10 .elementor-element.elementor-element-0a08686 .elementor-icon::before { content: '✓'; color: #19734b; }
+.elementor-10 .elementor-element.elementor-element-4558539,
+.elementor-10 .elementor-element.elementor-element-f7fe35a { font-size: 25px; line-height: 1.25; }
+@media (max-width: 480px) {
+  .patient-review { padding: 24px 15px; }
+  .review-header { gap: 6px; }
+  .review-verified { margin-left: 0; font-size: 12px; }
+  .review-stars { font-size: 17px; }
+  .review-name { font-size: 14px; }
+  .patient-review .review-text { font-size: 17px; }
+}
+.booking-float { display: inline-block; background: #124b70; color: #fff; border-radius: 30px; padding: 14px 20px; box-shadow: 0 4px 15px #0003; font: 600 15px Inter, sans-serif; }
+.cta-whatsapp-icon { display: inline-block; width: 20px !important; height: 20px !important; max-width: none; object-fit: contain; filter: brightness(0) invert(1); vertical-align: middle; }
+.elementor-button-icon { display: inline-flex; align-items: center; }
+.booking-float { display: inline-flex; align-items: center; gap: 8px; }
+.elementor-10 .elementor-element.elementor-element-e5b8258 { flex-wrap: wrap; gap: 15px; }
+.elementor-10 .elementor-element.elementor-element-92bd5e9 { width: auto; max-width: 100%; }
+.elementor-10 .elementor-element.elementor-element-92bd5e9 p { font-size: 12px; white-space: normal; }
+.elementor-10 .elementor-element.elementor-element-51c2e1d h1,
+.elementor-10 .elementor-element.elementor-element-fe8e7b5 h1,
+.elementor-10 .elementor-element.elementor-element-33fc3fd h1 { font-size: 21px; line-height: 1.35; }
+.elementor-10 .elementor-element.elementor-element-5fe847f a { color: inherit; text-decoration: none; }
+@media (max-width: 1024px) {
+  .elementor-10 .elementor-element.elementor-element-312e643:not(.elementor-motion-effects-element-type-background) { background: #e5dfd5; }
+  .elementor-10 .elementor-element.elementor-element-8b64fb3 img { width: 100%; height: 460px; object-fit: cover; object-position: 76% center; border-radius: 12px 12px 0 0; }
+}
+@media (max-width: 767px) {
+  .elementor-10 .elementor-element.elementor-element-8b64fb3 img { height: 380px; object-position: 78% center; }
+}
