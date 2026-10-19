@@ -1,4 +1,8 @@
 /* Fundo da primeira seção na versão para computador. */
+@media (max-width: 767px) {
+  html, body { width: 100%; max-width: 100%; overflow-x: clip; }
+  .elementor-10 { width: 100%; max-width: 100%; min-width: 0; }
+}
 #sobre-denise > .e-con-inner { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 40px; align-items: start; }
 .denise-about-photo { position: relative; margin: 0; width: 100%; align-self: start; }
 .denise-about-photo img { display: block; width: 100%; height: auto; }
