@@ -3,7 +3,11 @@
   if (preference.matches || !('IntersectionObserver' in window)) return;
 
   const sections = document.querySelectorAll('.elementor-10 > .e-con.e-parent, .mobile-hero');
-  const cards = document.querySelectorAll('.service-card, .patient-review');
+  const cards = document.querySelectorAll('.service-card, .patient-review, .e-con[data-settings*="background_background"]:has(> .elementor-widget-icon)');
+  cards.forEach((card, index) => {
+    card.classList.add('motion-card');
+    card.style.setProperty('--card-delay', `${(index % 3) * 90}ms`);
+  });
   const targets = [...sections, ...cards];
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
