@@ -5,12 +5,38 @@
   const dots = [...gallery.querySelectorAll('[data-space-index]')];
   const carousel = gallery.querySelector('.space-carousel');
   let current = 0;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let stopped = reduced.matches;
+  let hovered = false;
+  let focused = false;
+  let visible = false;
+  let timer;
+  const play = document.createElement('button');
+  play.type = 'button';
+  play.className = 'space-play';
+  gallery.querySelector('.space-controls').append(play);
+  function schedule() {
+    clearTimeout(timer);
+    play.textContent = stopped ? 'Reproduzir' : 'Pausar';
+    play.setAttribute('aria-label', stopped ? 'Reproduzir slides automaticamente' : 'Pausar slides automáticos');
+    if (stopped || hovered || focused || !visible || document.hidden) return;
+    timer = setTimeout(() => { show(current + 1); }, 5000);
+  }
   function show(index) {
     current = (index + slides.length) % slides.length;
     slides.forEach((slide, i) => { slide.hidden = i !== current; });
     dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === current)));
     gallery.querySelector('.space-counter').textContent = `${current + 1} / ${slides.length}`;
+    schedule();
   }
+  play.addEventListener('click', () => { stopped = !stopped; schedule(); });
+  gallery.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') { hovered = true; schedule(); } });
+  gallery.addEventListener('pointerleave', () => { hovered = false; schedule(); });
+  gallery.addEventListener('focusin', () => { focused = true; schedule(); });
+  gallery.addEventListener('focusout', event => { focused = gallery.contains(event.relatedTarget); schedule(); });
+  document.addEventListener('visibilitychange', schedule);
+  reduced.addEventListener('change', event => { if (event.matches) stopped = true; schedule(); });
+  new IntersectionObserver(entries => { visible = entries[0].isIntersecting; schedule(); }, { threshold: .1 }).observe(carousel);
   gallery.querySelector('[data-space-prev]').addEventListener('click', () => show(current - 1));
   gallery.querySelector('[data-space-next]').addEventListener('click', () => show(current + 1));
   dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));

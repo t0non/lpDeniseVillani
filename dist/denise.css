@@ -1,29 +1,34 @@
 /* Fundo da primeira seção na versão para computador. */
-.space-gallery { width: 100%; padding: 64px 20px; background: #eee8dc; color: #1f282e; font-family: Inter, sans-serif; }
-.space-inner { max-width: 1100px; margin: auto; }
-.space-heading { max-width: 740px; margin-bottom: 32px; }
+.space-gallery { width: 100%; padding: 60px 20px; background: #fffcf5; color: #1f282e; font-family: Inter, sans-serif; }
+.space-inner { max-width: 1000px; margin: auto; }
+.space-heading { max-width: 740px; margin: 0 auto 36px; text-align: center; }
 .space-eyebrow { font: 700 12px/1.4 Inter, sans-serif; letter-spacing: 1.2px; color: #124b70; margin: 0 0 14px; }
-.space-heading h2 { font: 600 clamp(28px, 3.5vw, 38px)/1.15 Inter, sans-serif; letter-spacing: -.05em; margin: 0 0 18px; }
-.space-heading h2 span { background: #124b70; color: #fff; padding: 0 3px; }
+.space-heading h2 { font: 600 36px/1.15 Inter, sans-serif; letter-spacing: -.05em; margin: 0 0 18px; }
+.space-heading h2 span { background: #1f282e; color: #fffcf5; padding: 0 3px; }
 .space-heading > p:last-child { font-size: 16px; line-height: 1.7; margin: 0; }
 .space-slide { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 40px; }
 .space-slide[hidden], .space-controls[hidden] { display: none; }
-.space-slide figure { margin: 0; }
-.space-slide figure img { display: block; width: 100%; height: 430px; object-fit: contain; border-radius: 12px; background: #ded6c7; }
-.space-slide figcaption { margin-top: 10px; font-size: 12px; color: #59636a; line-height: 1.5; }
-.space-copy h3 { font: 600 28px/1.2 Inter, sans-serif; letter-spacing: -.04em; margin: 0 0 20px; }
-.space-copy > p:not(.space-eyebrow) { font-size: 16px; line-height: 1.75; margin: 0 0 22px; }
+.space-slide figure { margin: 0; display: flex; justify-content: center; }
+.space-slide figure img { display: block; width: auto; max-width: 100%; height: 430px; object-fit: contain; border-radius: 0; background: none; box-shadow: none; }
+.space-slide figcaption { display: none; }
+.space-copy .space-eyebrow { display: none; }
+.space-copy h3 { font: 600 28px/1.15 Inter, sans-serif; letter-spacing: -.05em; margin: 0 0 20px; }
+.space-copy > p:not(.space-eyebrow) { font-size: 16px; line-height: 1.6; margin: 0 0 22px; }
 .space-copy a { color: #124b70; font-size: 14px; text-decoration: underline; }
 .space-controls { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 24px; }
 .space-controls > button { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #124b70; border-radius: 50%; background: transparent; color: #124b70; font-size: 23px; cursor: pointer; padding: 0; }
 .space-controls > button:hover { color: #fff; background: #124b70; }
+.space-controls > .space-play { width: auto; padding: 0 12px; border: 0; font: 500 12px Inter, sans-serif; }
+@keyframes space-enter { from { opacity: .25; } to { opacity: 1; } }
+.space-slide:not([hidden]) { animation: space-enter .45s ease; }
+@media (prefers-reduced-motion: reduce) { .space-slide:not([hidden]) { animation: none; } }
 .space-counter { font-size: 13px; min-width: 35px; }
 .space-dots { display: flex; align-items: center; gap: 3px; }
 .space-dots button { padding: 8px; border: 0; background: transparent; cursor: pointer; }
 .space-dots button::before { display: block; content: ''; width: 7px; height: 7px; border-radius: 50%; background: #b2aaa0; }
 .space-dots button[aria-pressed=true]::before { background: #124b70; }
 .space-carousel:focus-visible, .space-controls button:focus-visible { outline: 3px solid #124b70; outline-offset: 4px; }
-@media (max-width: 767px) { .space-gallery { padding: 42px 20px; } .space-slide { grid-template-columns: 1fr; gap: 24px; } .space-slide figure img { height: 360px; } .space-copy h3 { font-size: 25px; } .space-controls { gap: 10px; } .space-dots { gap: 0; } .space-dots button { padding: 7px; } }
+@media (max-width: 767px) { .space-gallery { padding: 42px 20px; } .space-slide { grid-template-columns: 1fr; gap: 24px; } .space-slide figure img { height: 360px; } .space-heading h2 { font-size: 30px; } .space-copy h3 { font-size: 26px; } .space-controls { gap: 8px; flex-wrap: wrap; } .space-dots { gap: 0; } .space-dots button { padding: 7px; } }
 .consultation-story { width: 100%; padding: 64px 20px; background: #eee8dc; color: #1f282e; font-family: Inter, sans-serif; }
 .consultation-story-inner { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 44px; max-width: 1100px; margin: auto; }
 .consultation-photo { margin: 0; }
