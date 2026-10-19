@@ -1,4 +1,8 @@
 /* Fundo da primeira seção na versão para computador. */
+.risk-title-line { white-space: nowrap; }
+@media (max-width: 767px) {
+  .elementor-10 .elementor-element.elementor-element-4558539 { flex: 1; width: auto; max-width: none; min-width: 0; font-size: clamp(18px, 5.1vw, 25px); }
+}
 .office-photo-heading { padding: 20px 20px 28px; background: #fffcf5; text-align: center; }
 .office-photo-heading h2 { max-width: 900px; margin: 0 auto 16px; color: #1f282e; font: 600 36px/1.15 Inter, sans-serif; letter-spacing: -.05em; }
 .office-photo-heading h2 span { background: #1f282e; color: #fffcf5; padding: 0 3px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
