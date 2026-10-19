@@ -21,10 +21,10 @@ Universidade Federal de Minas Gerais; residência em clínica médica pelo MEC e
 ## Endereço
 Rua Eduardo Porto, 452, Casa, Cidade Jardim, Belo Horizonte, Minas Gerais, Brasil. CEP 30380-060.
 
-Telefone exibido: (31) 2441-0631, contato intermediado pela Doctoralia. Não há WhatsApp direto confirmado no site.
+Telefone / WhatsApp para agendamento: +55 31 9979-1609, informado pela responsável pelo site.
 
 ## Agendamento
-[Consultar disponibilidade e agendar na Doctoralia](https://www.doctoralia.com.br/denise-villani-de-carvalho/cardiologista-medico-clinico-geral/belo-horizonte).
+[Consultar o perfil na Doctoralia](https://www.doctoralia.com.br/denise-villani-de-carvalho/cardiologista-medico-clinico-geral/belo-horizonte).
 
 ## Site
 [Página principal e mapa do consultório](https://lpdenisevillani.vercel.app/).
@@ -34,3 +34,5 @@ Informações revisadas em 19/10/2026. Valores, disponibilidade e condições po
 ## Perfis oficiais
 - [Perfil do consultório no Google](https://share.google/jCsu2WLRd8hnIsztO)
 - [Instagram @de_villani](https://www.instagram.com/de_villani/)
+
+[Agendar pelo WhatsApp](https://wa.me/553199791609?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Denise%20Villani.%20Vim%20pelo%20site.).

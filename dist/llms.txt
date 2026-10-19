@@ -2,7 +2,7 @@
 
 > Cardiologista e médica de clínica médica com consultório no Cidade Jardim, em Belo Horizonte, Minas Gerais. Atendimento particular presencial e por teleconsulta.
 
-CRM-MG 18203; RQE 47487 e 47671. Endereço: Rua Eduardo Porto, 452, Casa, Cidade Jardim, Belo Horizonte, MG, CEP 30380-060. O telefone exibido no site, (31) 2441-0631, é intermediado pela Doctoralia; não é apresentado como WhatsApp direto. Agendamentos, preços e horários devem ser consultados no perfil da médica na plataforma. Informações revisadas em 19/10/2026.
+CRM-MG 18203; RQE 47487 e 47671. Endereço: Rua Eduardo Porto, 452, Casa, Cidade Jardim, Belo Horizonte, MG, CEP 30380-060. Telefone / WhatsApp para agendamento informado pela responsável pelo site: +55 31 9979-1609. Confirme disponibilidade, preços e horários no contato de agendamento. Informações revisadas em 19/10/2026.
 
 ## Informações do atendimento
 - [Resumo em Markdown](https://lpdenisevillani.vercel.app/index.md): identidade, serviços, endereço, modalidades e agendamento.
@@ -17,3 +17,5 @@ CRM-MG 18203; RQE 47487 e 47671. Endereço: Rua Eduardo Porto, 452, Casa, Cidade
 ## Perfis oficiais
 - [Perfil do consultório no Google](https://share.google/jCsu2WLRd8hnIsztO)
 - [Instagram @de_villani](https://www.instagram.com/de_villani/)
+
+[Agendar pelo WhatsApp](https://wa.me/553199791609?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20com%20a%20Dra.%20Denise%20Villani.%20Vim%20pelo%20site.).

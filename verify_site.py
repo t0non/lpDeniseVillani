@@ -22,6 +22,6 @@ for value in ['João','Brioschi','56867','38668','Coração Blindado','domicilia
     assert value not in text, value
 assert not any('whatsapp' in link or 'drjoao' in link for link in c.links)
 assert not [p for p in c.resources if not (root/p.lstrip('/')).exists()]
-for value in ['DENISE VILLANI','18203','47487','47671','Eduardo Porto','2441-0631','Teleconsulta']:
+for value in ['DENISE VILLANI','18203','47487','47671','Eduardo Porto','9979-1609','Teleconsulta']:
     assert value in text,value
 print('OK: identidade, credenciais, serviços, contatos, links e recursos locais.')
