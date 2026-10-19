@@ -1,4 +1,7 @@
 /* Fundo da primeira seção na versão para computador. */
+#sobre-denise .elementor-element-33597d6 { width: 100% !important; max-width: 100% !important; --container-widget-width: 100%; }
+#sobre-denise .elementor-element-33597d6 span { white-space: nowrap; }
+@media (max-width: 767px) { #sobre-denise .elementor-element-33597d6 { font-size: clamp(25px, 6.5vw, 36px); } }
 .patient-reviews { overflow-y: hidden !important; touch-action: pan-x; overscroll-behavior-x: contain; overscroll-behavior-y: none; }
 .local-section-nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px 24px; padding: 24px 20px; background: #1f282e; font: 400 14px/1.5 Inter, sans-serif; }
 .local-section-nav a { color: #fffcf5; text-decoration: underline; text-underline-offset: 3px; }
