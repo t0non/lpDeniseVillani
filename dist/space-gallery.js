@@ -1,62 +1,39 @@
 (() => {
-  const gallery = document.querySelector('.space-gallery');
-  if (!gallery) return;
-  const slides = [...gallery.querySelectorAll('.space-slide')];
-  const dots = [...gallery.querySelectorAll('[data-space-index]')];
-  const carousel = gallery.querySelector('.space-carousel');
-  let current = 0;
-  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let stopped = reduced.matches;
-  let hovered = false;
-  let focused = false;
-  let visible = false;
-  let timer;
-  const play = document.createElement('button');
-  play.type = 'button';
-  play.className = 'space-play';
-  gallery.querySelector('.space-controls').append(play);
-  function schedule() {
-    clearTimeout(timer);
-    play.textContent = stopped ? 'Reproduzir' : 'Pausar';
-    play.setAttribute('aria-label', stopped ? 'Reproduzir slides automaticamente' : 'Pausar slides automáticos');
-    if (stopped || hovered || focused || !visible || document.hidden) return;
-    timer = setTimeout(() => { show(current + 1); }, 5000);
-  }
-  function show(index) {
-    current = (index + slides.length) % slides.length;
-    slides.forEach((slide, i) => { slide.hidden = i !== current; });
-    dots.forEach((dot, i) => dot.setAttribute('aria-pressed', String(i === current)));
-    gallery.querySelector('.space-counter').textContent = `${current + 1} / ${slides.length}`;
-    schedule();
-  }
-  play.addEventListener('click', () => { stopped = !stopped; schedule(); });
-  gallery.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') { hovered = true; schedule(); } });
-  gallery.addEventListener('pointerleave', () => { hovered = false; schedule(); });
-  gallery.addEventListener('focusin', () => { focused = true; schedule(); });
-  gallery.addEventListener('focusout', event => { focused = gallery.contains(event.relatedTarget); schedule(); });
-  document.addEventListener('visibilitychange', schedule);
-  reduced.addEventListener('change', event => { if (event.matches) stopped = true; schedule(); });
-  new IntersectionObserver(entries => { visible = entries[0].isIntersecting; schedule(); }, { threshold: .1 }).observe(carousel);
-  gallery.querySelector('[data-space-prev]').addEventListener('click', () => show(current - 1));
-  gallery.querySelector('[data-space-next]').addEventListener('click', () => show(current + 1));
-  dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
-  carousel.addEventListener('keydown', event => {
-    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
-    event.preventDefault();
-    show(current + (event.key === 'ArrowRight' ? 1 : -1));
+  const strip = document.querySelector('.space-photo-strip');
+  if (!strip) return;
+  const toggle = document.querySelector('.space-strip-toggle');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  let paused = reduced.matches, hover = false, focused = false, touching = false, visible = false;
+  let frame, last = null, position = 0;
+  [...strip.children].forEach(photo => {
+    const copy = photo.cloneNode(true);
+    copy.setAttribute('aria-hidden', 'true');
+    copy.querySelector('img').alt = '';
+    strip.append(copy);
   });
-  let start = null;
-  carousel.addEventListener('touchstart', event => {
-    start = { x: event.changedTouches[0].clientX, y: event.changedTouches[0].clientY };
-  }, { passive: true });
-  carousel.addEventListener('touchend', event => {
-    if (!start) return;
-    const dx = event.changedTouches[0].clientX - start.x;
-    const dy = event.changedTouches[0].clientY - start.y;
-    if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) show(current + (dx < 0 ? 1 : -1));
-    start = null;
-  }, { passive: true });
-  carousel.addEventListener('touchcancel', () => { start = null; });
-  gallery.querySelector('.space-controls').hidden = false;
-  show(0);
+  function step(time) {
+    if (last !== null && !paused && !hover && !focused && !touching && visible && !document.hidden) {
+      position = strip.scrollLeft + Math.min(time - last, 50) * .035 + (position % 1);
+      const loop = strip.scrollWidth / 2;
+      if (position >= loop) position -= loop;
+      strip.scrollLeft = Math.floor(position);
+    }
+    last = time;
+    frame = requestAnimationFrame(step);
+  }
+  function label() { toggle.textContent = paused ? 'Reproduzir' : 'Pausar'; toggle.setAttribute('aria-label', paused ? 'Reproduzir passagem automática das fotos' : 'Pausar passagem automática das fotos'); }
+  toggle.addEventListener('click', () => { paused = !paused; label(); });
+  strip.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') hover = true; });
+  strip.addEventListener('pointerleave', () => { hover = false; });
+  strip.addEventListener('focusin', () => { focused = true; });
+  strip.addEventListener('focusout', () => { focused = false; });
+  strip.addEventListener('touchstart', () => { touching = true; }, { passive: true });
+  strip.addEventListener('touchend', () => { touching = false; }, { passive: true });
+  strip.addEventListener('touchcancel', () => { touching = false; }, { passive: true });
+  reduced.addEventListener('change', e => { if (e.matches) { paused = true; label(); } });
+  new IntersectionObserver(entries => { visible = entries[0].isIntersecting; }).observe(strip);
+  label();
+  frame = requestAnimationFrame(step);
+  window.addEventListener('pagehide', () => cancelAnimationFrame(frame));
+  window.addEventListener('pageshow', e => { if (e.persisted) { last = null; frame = requestAnimationFrame(step); } });
 })();
