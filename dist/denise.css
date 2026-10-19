@@ -92,4 +92,18 @@
 }
 @media (max-width: 767px) {
   .elementor-10 .elementor-element.elementor-element-8b64fb3 img { height: 380px; object-position: 78% center; }
+  .elementor-10 .elementor-element.elementor-element-312e643:not(.elementor-motion-effects-element-type-background) {
+    background-image: url('/assets/background_site_mob_Denise.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: max(820px, 177.7vw);
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+  .elementor-10 .elementor-element.elementor-element-312e643 > .e-con-inner { align-self: flex-start; }
+  .elementor-10 .elementor-element.elementor-element-757a0ae { display: none; }
+  .elementor-10 .elementor-element.elementor-element-fe8e7b5 h1,
+  .elementor-10 .elementor-element.elementor-element-b8e648f h2 { color: #fff !important; }
+  .elementor-10 .elementor-element.elementor-element-fe8e7b5 h1 { color: #fff !important; }
 }
