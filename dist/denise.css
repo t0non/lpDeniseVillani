@@ -1,4 +1,15 @@
 /* Fundo da primeira seção na versão para computador. */
+@keyframes cta-radar {
+  0%, 55%, 100% { box-shadow: 0 0 0 0 rgba(18,75,112,0); }
+  8% { box-shadow: 0 0 0 0 rgba(18,75,112,.2); }
+  48% { box-shadow: 0 0 0 10px rgba(18,75,112,0); }
+}
+.elementor-button, .mobile-hero-action a, .booking-float, .mobile-booking-float, .local-cta, .consultation-cta {
+  animation: cta-radar 3.8s ease-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .elementor-button, .mobile-hero-action a, .booking-float, .mobile-booking-float, .local-cta, .consultation-cta { animation: none; }
+}
 .office-full-photo { width: 100%; margin: 0; padding: 0; line-height: 0; }
 .office-full-photo img { display: block; width: 100%; height: auto; margin: 0; border: 0; border-radius: 0; }
 .space-photo-strip { display: flex; width: 100%; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; }
