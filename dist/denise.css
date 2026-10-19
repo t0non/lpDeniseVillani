@@ -10,7 +10,10 @@
 @media (prefers-reduced-motion: reduce) {
   .elementor-button, .mobile-hero-action a, .booking-float, .mobile-booking-float, .local-cta, .consultation-cta { animation: none; }
 }
-.office-full-photo { width: 100%; margin: 0; padding: 0; line-height: 0; }
+.office-full-photo { position: relative; width: 100%; margin: 0; padding: 0; line-height: 0; }
+.office-full-photo::before, .office-full-photo::after { content: ''; position: absolute; left: 0; right: 0; height: 25%; max-height: 115px; pointer-events: none; z-index: 1; }
+.office-full-photo::before { top: 0; background: linear-gradient(to bottom, #fffcf5 0%, rgba(255,252,245,.75) 25%, rgba(255,252,245,0) 100%); }
+.office-full-photo::after { bottom: 0; background: linear-gradient(to top, #f2eee3 0%, rgba(242,238,227,.75) 25%, rgba(242,238,227,0) 100%); }
 .office-full-photo img { display: block; width: 100%; height: auto; margin: 0; border: 0; border-radius: 0; }
 @media (min-width: 1025px) {
   .office-full-photo img { height: 460px; object-fit: cover; object-position: center 60%; }
